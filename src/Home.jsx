@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-
-import hero2 from "./assets/WhatsApp Image 2026-06-15 at 3.30.48 PM.jpeg";
-import hero3 from "./assets/WhatsApp Image 2026-06-15 at 3.40.03 PM.jpeg";
-import hero4 from "./assets/WhatsApp Image 2026-06-15 at 3.46.27 PM.jpeg";
-import hero5 from "./assets/WhatsApp Image 2026-06-15 at 3.50.53 PM.jpeg";
-import hero6 from "./assets/WhatsApp Image 2026-06-15 at 4.06.59 PM.jpeg";
-import hero7 from "./assets/WhatsApp Image 2026-06-15 at 4.40.06 PM.jpeg";
+import { HeroSection } from "./HeroSection";
 import {
   ArrowRight,
   BarChart,
@@ -310,19 +303,9 @@ const industries = [
 
 const CONTACT_STORAGE_KEY = "contactSubmissions";
 
-const heroSlides = [
-
-  hero2,
-  hero3,
-  hero4,
-  hero5,
-  hero6,
-  hero7,
-];
 
 export default function Home() {
   const [counts, setCounts] = useState(stats.map(() => 0));
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [name, setName] = useState("");
   const [businessName, setBusinessName] = useState("");
   const [phone, setPhone] = useState("");
@@ -394,39 +377,11 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
-
-    return () => clearInterval(slideInterval);
-  }, []);
-
   return (
-    <div id="top" className="flex min-h-screen flex-col pt-20 bg-slate-50 text-slate-800" data-testid="page-home">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/70 via-white to-white py-16 md:py-24 lg:py-28">
-        {/* Subtle background blur highlights */}
-        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-300/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-indigo-300/10 rounded-full blur-3xl pointer-events-none" />
-
-        {/* Background single-image slider (one image visible at a time) */}
-        <div className="hero-slider-wrap">
-          {heroSlides.map((src, i) => (
-            <div key={src} className={`hero-slide ${i === currentSlide ? "active" : ""}`}>
-              <img
-                src={src}
-                alt={`hero-bg-${i}`}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          ))}
-          <div className="hero-overlay-dark" />
-        </div>
-
-      </section>
-
+    
+    <div id="top" className="flex min-h-screen flex-col pt-24 bg-slate-50 text-slate-800" data-testid="page-home">
+      
+      <HeroSection />
       {/* About Section */}
       <section id="about" className="border-y border-blue-100 bg-gradient-to-b from-white to-blue-50/30 py-20">
         <div className="container mx-auto px-4 md:px-6">

@@ -184,7 +184,7 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 pt-20">
+    <div className="min-h-screen bg-slate-50 text-slate-800 pt-24">
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-blue-50/70 via-white to-white">
         <div className="container mx-auto px-4 md:px-6">

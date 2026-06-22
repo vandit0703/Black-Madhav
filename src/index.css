@@ -206,6 +206,10 @@
     min-height: 100%;
   }
 
+  html {
+    scroll-padding-top: 6rem;
+  }
+
   body {
     @apply m-0 font-sans antialiased bg-background text-foreground;
     overflow-x: hidden;
