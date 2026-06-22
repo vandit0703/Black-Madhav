@@ -831,11 +831,11 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Phone</h3>
-                  <p>+91 9876543210</p>
+                  <p>+91 7041090715</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Email</h3>
-                  <p>info@blackmadhav.com</p>
+                  <p>blackmadhavdigitalsolutions@gmail.com</p>
                 </div>
               </div>
             </div>

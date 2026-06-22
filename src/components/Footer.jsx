@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-blue-400">Contact Info</p>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li>Email: blackmadhav.com</li>
+              <li>Email: blackmadhavdigitalsolutions@gmail.com</li>
               <li>Phone: +91 7041090715</li>
               <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 8128730715</li>
               <li>Address: Jamnagar, Gujarat</li>
