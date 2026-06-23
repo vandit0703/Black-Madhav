@@ -94,7 +94,7 @@ export default function Admin() {
                 Login
               </button>
             </form>
-            <p className="mt-6 text-sm text-slate-500">
+            <p className="mt-6 text-sm text-slate-500" style={{ display: "none" }}>
               Use username <span className="font-semibold text-slate-900">admin</span> and password <span className="font-semibold text-slate-900">password123</span>.
             </p>
           </div>
