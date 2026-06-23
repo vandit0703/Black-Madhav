@@ -140,7 +140,7 @@ export default function Staff() {
   if (!isLoggedIn) {
     return (
       <div className="min-h-screen bg-slate-50 text-slate-900 pt-24 pb-24">
-        <section className="container mx-auto px-4 md:px-6">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-md text-center mb-14">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">Staff Login</p>
             <h1 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4">Staff Dashboard</h1>
@@ -171,7 +171,7 @@ export default function Staff() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pt-24 pb-24">
-      <section className="container mx-auto px-4 md:px-6">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center mb-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>

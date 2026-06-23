@@ -56,7 +56,7 @@ const expertise = [
 
 const experts = [
   {
-    name: "Krishna Chandravadiya",
+    name: "Krishn Chandravadiya",
     role: "CEO & Founder",
     bio: "Leads the company vision and guides strategy, ensuring every project achieves growth, brand impact, and measurable business results.",
   },
@@ -71,7 +71,7 @@ const experts = [
     bio: "Builds reliable, high-performance web applications from front-end design to back-end systems, making sure every solution is fast, scalable, and secure.",
   },
   {
-    name: "Vishruti Patel",
+    name: "Vishruti Sanghani",
     role: "Digital Marketing Specialist",
     bio: "Develops tailored marketing campaigns and growth strategies that increase visibility, generate leads, and convert audiences across digital channels.",
   },
@@ -184,20 +184,20 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 pt-24">
+    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-800 pt-24">
       {/* Hero Section */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-blue-50/70 via-white to-white">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900">
+            <h1 className="mb-6 bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl md:text-6xl">
               We Build Digital Experiences That Drive Growth
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-base leading-relaxed text-slate-600 sm:text-xl">
               At BLACK MADHAV DIGITAL SOLUTION, we don't just create websites or run campaigns — we build powerful digital experiences that help businesses grow, scale, and stand out in today's competitive market. We combine technology, creativity, and strategy to deliver solutions that are not only visually impressive but also performance-driven.
             </p>
           </motion.div>
@@ -206,7 +206,7 @@ export default function About() {
 
       {/* Our Approach Section */}
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -217,7 +217,7 @@ export default function About() {
               <span className="h-3 w-3 rounded-full bg-green-600" />
               <span className="text-sm font-semibold text-green-700">Our Approach</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-6">
+            <h2 className="mb-6 text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               We believe every business is unique
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -260,7 +260,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center"
+            className="rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-5 text-center text-white sm:p-8"
           >
             <p className="text-lg font-semibold">
               This ensures that every project we deliver adds real value to your business.
@@ -271,7 +271,7 @@ export default function About() {
 
       {/* What Makes Us Different */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -282,7 +282,7 @@ export default function About() {
               <span className="h-3 w-3 rounded-full bg-blue-600" />
               <span className="text-sm font-semibold text-blue-700">Our Difference</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+            <h2 className="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               What Makes Us Different
             </h2>
           </motion.div>
@@ -298,7 +298,7 @@ export default function About() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                className="bg-slate-50 rounded-xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all group"
+                className="group rounded-xl border border-slate-200 bg-slate-50 p-5 transition-all hover:border-blue-300 hover:shadow-lg sm:p-8"
               >
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform">
                   {item.icon}
@@ -313,7 +313,7 @@ export default function About() {
 
       {/* Our Expertise */}
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -324,7 +324,7 @@ export default function About() {
               <span className="h-3 w-3 rounded-full bg-purple-600" />
               <span className="text-sm font-semibold text-purple-700">Our Expertise</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+            <h2 className="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               We specialize in building complete digital ecosystems
             </h2>
           </motion.div>
@@ -352,7 +352,7 @@ export default function About() {
 
       {/* Meet Our Experts */}
       <section className="py-20 md:py-28 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -363,7 +363,7 @@ export default function About() {
               <span className="h-3 w-3 rounded-full bg-cyan-600" />
               <span className="text-sm font-semibold text-cyan-700">Meet Our Experts</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+            <h2 className="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               Meet the team driving your digital success
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto mt-4">
@@ -382,7 +382,7 @@ export default function About() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-lg transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:shadow-lg sm:p-8"
               >
                 <div className="h-20 w-20 rounded-full bg-gradient-to-br from-cyan-600 to-blue-500 text-white flex items-center justify-center text-2xl font-bold mb-6">
                   {expert.name
@@ -401,7 +401,7 @@ export default function About() {
 
       {/* Vision, Mission, Mindset */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -432,7 +432,7 @@ export default function About() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                className={`bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white shadow-lg hover:shadow-xl transition-all`}
+                className={`bg-gradient-to-br ${item.color} rounded-2xl p-5 text-white shadow-lg transition-all hover:shadow-xl sm:p-8`}
               >
                 <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                 <p className="text-lg leading-relaxed opacity-95">{item.description}</p>
@@ -444,7 +444,7 @@ export default function About() {
 
       {/* How We Work */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -455,7 +455,7 @@ export default function About() {
               <span className="h-3 w-3 rounded-full bg-orange-600" />
               <span className="text-sm font-semibold text-orange-700">Our Process</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+            <h2 className="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               How We Work
             </h2>
           </motion.div>
@@ -493,14 +493,14 @@ export default function About() {
 
       {/* Extra Sections Grid */}
       <section className="py-20 md:py-28 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-950">
+            <h2 className="text-3xl font-extrabold text-blue-950 sm:text-4xl md:text-5xl">
               What Drives Our Success
             </h2>
           </motion.div>
@@ -516,7 +516,7 @@ export default function About() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-lg hover:border-blue-300 transition-all group"
+                className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-blue-300 hover:shadow-lg sm:p-8"
               >
                 <div className="text-blue-600 mb-4 group-hover:scale-110 group-hover:text-indigo-600 transition-all">
                   {section.icon}
@@ -532,26 +532,26 @@ export default function About() {
       {/* Final CTA Section */}
       <section className="py-24 md:py-32 bg-gradient-to-r from-blue-950 to-blue-900 relative overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl opacity-10" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-purple-400 rounded-full blur-3xl opacity-10" />
+        <div className="absolute right-0 top-0 h-56 w-56 max-w-none rounded-full bg-blue-400 opacity-10 blur-3xl sm:h-96 sm:w-96" />
+        <div className="absolute bottom-0 left-0 h-48 w-48 max-w-none rounded-full bg-purple-400 opacity-10 blur-3xl sm:h-72 sm:w-72" />
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center text-white"
           >
-            <h2 className="text-5xl md:text-6xl font-extrabold mb-6">
+            <h2 className="mb-6 text-3xl font-extrabold sm:text-5xl md:text-6xl">
               Let's Build Something Powerful
             </h2>
-            <p className="text-xl mb-8 opacity-95">
+            <p className="mb-8 text-base leading-7 opacity-95 sm:text-xl">
               We are here to turn your ideas into reality and help your business grow in the digital world. Let's build something impactful together and take your business to the next level.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-100 transition-colors shadow-lg"
+              className="w-full rounded-lg bg-white px-6 py-4 text-base font-bold text-indigo-600 shadow-lg transition-colors hover:bg-slate-100 sm:w-auto sm:px-8 sm:text-lg"
             >
               Start Your Project Today
             </motion.button>

@@ -274,7 +274,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-white pt-28 pb-16">
       <section className="bg-gradient-to-r from-blue-950 to-blue-900 py-20 text-white">
-        <div className="container mx-auto px-4 md:px-6 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-300">
             Services
           </p>
@@ -301,7 +301,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section id="services-list" className="container mx-auto px-4 md:px-6 py-16 sm:py-20">
+      <section id="services-list" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="mx-auto mb-12 sm:mb-16 max-w-3xl text-center">
           <p className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-widest text-blue-600">
             Our Services

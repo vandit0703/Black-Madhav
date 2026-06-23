@@ -36,12 +36,12 @@ export function Navbar() {
       }`}
       data-testid="navbar"
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group" data-testid="link-home-logo">
-          <div className="w-12 h-12 rounded-md bg-black flex items-center justify-center text-white font-bold text-xl group-hover:opacity-80 transition-opacity flex-shrink-0">
-            <img src={logo} alt="BMDS Logo" className="h-7 w-7 max-w-full object-contain" />
+      <div className="container mx-auto flex min-w-0 items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link to="/" className="group flex min-w-0 items-center gap-3" data-testid="link-home-logo">
+          <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md bg-black text-xl font-bold text-white transition-opacity group-hover:opacity-80 sm:h-12 sm:w-12">
+            <img src={logo} alt="BMDS Logo" className="h-7 w-7 object-contain" />
           </div>
-          <span className="font-bold text-lg tracking-tight hidden sm:block text-black">
+          <span className="hidden truncate text-lg font-bold tracking-tight text-black sm:block">
             Black Madhav Digital Solutions
           </span>
         </Link>
@@ -75,9 +75,10 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2 text-black hover:opacity-70 transition-opacity"
+          className="shrink-0 p-2 text-black transition-opacity hover:opacity-70 md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           data-testid="btn-mobile-menu-toggle"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
@@ -90,7 +91,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute top-full left-0 right-0 bg-white/80 backdrop-blur-xl border-b border-white/50 shadow-[0_8px_30px_rgba(15,23,42,0.12)] overflow-hidden md:hidden"
+            className="absolute left-0 right-0 top-full max-h-[calc(100svh-5rem)] overflow-y-auto overflow-x-hidden border-b border-white/50 bg-white/90 shadow-[0_8px_30px_rgba(15,23,42,0.12)] backdrop-blur-xl md:hidden"
             data-testid="mobile-menu"
           >
             <div className="flex flex-col p-4 space-y-2">

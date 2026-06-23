@@ -17,6 +17,7 @@ import {
   Tag,
 } from "lucide-react";
 
+
 const services = [
   {
     icon: <Globe className="w-7 h-7" />,
@@ -379,12 +380,12 @@ export default function Home() {
 
   return (
     
-    <div id="top" className="flex min-h-screen flex-col pt-24 bg-slate-50 text-slate-800" data-testid="page-home">
+    <div id="top" className="flex min-h-screen flex-col overflow-x-hidden pt-24 bg-slate-50 text-slate-800 " data-testid="page-home">
       
       <HeroSection />
       {/* About Section */}
       <section id="about" className="border-y border-blue-100 bg-gradient-to-b from-white to-blue-50/30 py-20">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -415,9 +416,9 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1.2, ease: "easeOut" }}
-              className="rounded-2xl border border-blue-100 bg-blue-50/50 p-8 shadow-sm"
+              className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 shadow-sm sm:p-8"
             >
-              <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-900 to-indigo-950 p-8 text-white shadow-lg shadow-blue-950/15">
+              <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-900 to-indigo-950 p-5 text-white shadow-lg shadow-blue-950/15 sm:p-8">
                 <p className="text-sm font-semibold uppercase tracking-widest text-blue-200">
                   About Us
                 </p>
@@ -452,12 +453,12 @@ export default function Home() {
 
       {/* Services Section */}
       <section id="services" className="bg-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Our Services
             </p>
-            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950 md:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-blue-950 md:text-4xl">
               Complete Digital Services For Your Business
             </h2>
             <p className="text-lg leading-relaxed text-slate-600">
@@ -493,7 +494,7 @@ export default function Home() {
 
       {/* Why Choose Us Section */}
       <section className="bg-gradient-to-b from-blue-50/20 via-blue-50/50 to-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-[0.95fr_1.05fr] items-center">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
@@ -533,7 +534,7 @@ export default function Home() {
 
       {/* Portfolio Section */}
       <section id="portfolio" className="bg-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Portfolio
@@ -555,7 +556,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 whileHover={{ y: -8, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20, delay: index * 0.1 }}
-                className="group rounded-2xl border border-blue-100 bg-white p-8 shadow-sm hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300"
+                className="group rounded-2xl border border-blue-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/5 sm:p-8"
               >
                 <div className="mb-4 text-xs font-semibold tracking-wider text-blue-600 uppercase">Featured Project</div>
                 <h3 className="mb-3 text-xl font-semibold text-blue-950 group-hover:text-blue-600 transition-colors duration-300">{item.title}</h3>
@@ -571,7 +572,7 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <section className="bg-gradient-to-b from-white via-blue-50/30 to-blue-50/50 py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Testimonials
@@ -590,7 +591,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.01 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="relative rounded-2xl border border-blue-100 bg-white p-8 shadow-sm hover:shadow-lg hover:border-blue-200 transition-all duration-300"
+                className="relative rounded-2xl border border-blue-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-blue-200 hover:shadow-lg sm:p-8"
               >
                 <div className="mb-4 flex flex-wrap items-center gap-2">
                   <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-blue-600">
@@ -623,7 +624,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section id="faq" className="bg-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Frequently Asked Questions
@@ -661,7 +662,7 @@ export default function Home() {
 
       {/* Stats Section */}
       <section id="stats" className="bg-gradient-to-b from-blue-50/50 via-blue-50/30 to-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Our Work Speaks Through Numbers
@@ -697,7 +698,7 @@ export default function Home() {
 
       {/* Process Section */}
       <section id="process" className="bg-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Our Process
@@ -719,7 +720,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 whileHover={{ y: -6, scale: 1.01 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="group rounded-2xl border border-blue-100 bg-white p-8 shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300"
+                className="group rounded-2xl border border-blue-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-lg sm:p-8"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white font-bold shadow-md shadow-blue-500/20 group-hover:scale-110 transition-transform">
                   <span className="text-lg font-semibold">{index + 1}</span>
@@ -734,7 +735,7 @@ export default function Home() {
 
       {/* Industries Section */}
       <section id="industries" className="bg-gradient-to-b from-white via-blue-50/20 to-blue-50/40 py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Industries We Serve
@@ -756,9 +757,9 @@ export default function Home() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ duration: 0.3, delay: (index % 3) * 0.08 }}
-                className="group rounded-2xl border border-blue-100 bg-white p-8 shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300"
+                className="group rounded-2xl border border-blue-100 bg-white p-5 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-lg sm:p-8"
               >
-                <div className="w-1.5 h-8 bg-blue-500 rounded-r-md -ml-8 mb-4 group-hover:bg-indigo-600 transition-colors" />
+                <div className="-ml-5 mb-4 h-8 w-1.5 rounded-r-md bg-blue-500 transition-colors group-hover:bg-indigo-600 sm:-ml-8" />
                 <h3 className="mb-3 text-xl font-semibold text-blue-950 group-hover:text-blue-600 transition-colors">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-600">{item.description}</p>
               </motion.div>
@@ -769,8 +770,8 @@ export default function Home() {
 
       {/* Quote Section */}
       <section className="bg-white py-16 md:py-20">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 via-indigo-50/30 to-blue-50 p-10 text-center shadow-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-blue-100 bg-gradient-to-r from-blue-50 via-indigo-50/30 to-blue-50 p-5 text-center shadow-sm sm:p-10">
             <p className="text-lg font-semibold text-blue-950">
               "We don't just deliver projects — we build long-term partnerships that help your business grow digitally."
             </p>
@@ -784,27 +785,27 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-950 py-24 md:py-32 relative overflow-hidden">
         {/* Decorative background orbs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none" />
+        <div className="pointer-events-none absolute right-0 top-0 h-56 w-56 max-w-none rounded-full bg-blue-500/10 blur-3xl sm:h-96 sm:w-96 sm:-mr-20 sm:-mt-20" />
+        <div className="pointer-events-none absolute bottom-0 left-0 h-56 w-56 max-w-none rounded-full bg-indigo-500/10 blur-3xl sm:h-96 sm:w-96 sm:-mb-20 sm:-ml-20" />
 
-        <div className="container relative z-10 mx-auto px-4 md:px-6">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto mb-10 max-w-3xl text-center text-white">
-            <h2 className="mb-6 text-4xl font-bold tracking-tight md:text-5xl">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Ready To Grow Your Business?
             </h2>
-            <p className="mb-10 text-xl text-blue-200/80">
+            <p className="mb-10 text-base leading-7 text-blue-200/80 sm:text-xl">
               Let's build something powerful together. Start your digital journey with Black Madhav Digital Solution today.
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="inline-flex h-14 items-center justify-center rounded-xl bg-white px-10 text-lg font-semibold text-blue-950 transition-all duration-300 hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-0.5"
+                className="inline-flex h-14 w-full items-center justify-center rounded-xl bg-white px-6 text-base font-semibold text-blue-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-500/10 sm:w-auto sm:px-10 sm:text-lg"
               >
                 Start Project
               </a>
               <a
                 href="#contact"
-                className="inline-flex h-14 items-center justify-center rounded-xl border border-blue-500/30 bg-transparent px-10 text-lg font-semibold text-white transition-all duration-300 hover:bg-white/5 hover:border-blue-400 hover:-translate-y-0.5"
+                className="inline-flex h-14 w-full items-center justify-center rounded-xl border border-blue-500/30 bg-transparent px-6 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400 hover:bg-white/5 sm:w-auto sm:px-10 sm:text-lg"
               >
                 Contact Us
               </a>
@@ -815,7 +816,7 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="bg-white py-24 md:py-32">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-16 lg:grid-cols-[0.95fr_1.05fr]">
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
@@ -831,6 +832,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Phone</h3>
+                  <p>+91 8128730715</p>
                   <p>+91 7041090715</p>
                 </div>
                 <div>
@@ -840,7 +842,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-blue-100 bg-blue-50/30 p-8 shadow-sm">
+            <div className="rounded-2xl border border-blue-100 bg-blue-50/30 p-5 shadow-sm sm:p-8">
               <form className="space-y-5" onSubmit={handleSubmit}>
                 {feedback && (
                   <div className="rounded-2xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-slate-900">

@@ -77,21 +77,21 @@ function CSSFallbackBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       <div
-        className="absolute -left-24 top-10 h-72 w-72 rounded-full opacity-30"
+        className="absolute -left-24 top-10 h-72 w-72 max-w-none rounded-full opacity-30"
         style={{
           background: "radial-gradient(circle, rgba(56,189,248,0.45) 0%, transparent 70%)",
           animation: "heroGlow1 9s ease-in-out infinite",
         }}
       />
       <div
-        className="absolute right-0 top-1/4 h-64 w-64 rounded-full opacity-20"
+        className="absolute right-0 top-1/4 h-64 w-64 max-w-none rounded-full opacity-20"
         style={{
           background: "radial-gradient(circle, rgba(14,165,233,0.35) 0%, transparent 70%)",
           animation: "heroGlow2 10.5s ease-in-out infinite",
         }}
       />
       <div
-        className="absolute left-1/3 bottom-0 h-80 w-80 rounded-full opacity-15"
+        className="absolute bottom-0 left-1/3 h-80 w-80 max-w-none rounded-full opacity-15"
         style={{
           background: "radial-gradient(circle, rgba(59,130,246,0.25) 0%, transparent 75%)",
           animation: "heroGlow3 12s ease-in-out infinite",

@@ -54,7 +54,7 @@ export default function Careers() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 pt-24">
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-blue-700 text-white py-20">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold tracking-wide text-slate-100 mb-6">
               <Briefcase className="h-5 w-5" />
@@ -87,7 +87,7 @@ export default function Careers() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 md:px-6 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-start">
           <div>
             <div className="mb-8 max-w-3xl">
@@ -165,7 +165,7 @@ export default function Careers() {
       </section>
 
       <section className="bg-slate-100 py-20">
-        <div className="container mx-auto px-4 md:px-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-3xl bg-white p-10 shadow-sm border border-slate-200">
               <h3 className="text-2xl font-bold text-slate-950">How You Fit In</h3>
@@ -204,7 +204,7 @@ export default function Careers() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 md:px-6 py-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-3xl bg-white p-10 shadow-sm border border-slate-200">
             <h3 className="text-2xl font-bold text-slate-950">Growth Model</h3>
@@ -247,7 +247,7 @@ export default function Careers() {
       </section>
 
       <section className="bg-blue-950 py-20 text-white">
-        <div className="container mx-auto px-4 md:px-6 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center justify-center gap-3 rounded-full bg-white/10 px-5 py-3 text-sm uppercase tracking-[0.25em] text-cyan-200">
             <Puzzle className="h-5 w-5" />
             Become the Opportunity

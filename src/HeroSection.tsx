@@ -10,7 +10,7 @@ export function HeroSection() {
     >
       <HeroBackground />
 
-      <div className="absolute inset-0 z-10 flex items-center justify-center px-4 py-10 sm:px-6">
+      <div className="absolute inset-0 z-10 flex items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
         <div className="w-full max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 32 }}
@@ -18,11 +18,11 @@ export function HeroSection() {
             transition={{ duration: 0.85, ease: "easeOut", delay: 0.15 }}
             className="mx-auto max-w-3xl text-center"
           >
-            <span className="inline-flex items-center justify-center rounded-full border border-sky-400/30 bg-sky-400/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-sky-200 shadow-[0_0_40px_rgba(56,189,248,0.12)]">
+            <span className="inline-flex max-w-full items-center justify-center rounded-full border border-sky-400/30 bg-sky-400/10 px-3 py-2 text-center text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-sky-200 shadow-[0_0_40px_rgba(56,189,248,0.12)] sm:px-4 sm:text-sm sm:tracking-[0.3em]">
               PREMIUM DIGITAL AGENCY
             </span>
 
-            <h1 className="mt-8 text-4xl font-semibold leading-tight tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-8 text-3xl font-semibold leading-tight text-white sm:text-5xl sm:tracking-[-0.04em] lg:text-6xl">
               We Build Digital <span className="bg-gradient-to-r from-sky-300 via-cyan-300 to-blue-400 bg-clip-text text-transparent">Solutions</span> That Grow Your Business
             </h1>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
               <motion.a
                 href="#contact"
                 whileHover={{ y: -2, scale: 1.01 }}
-                className="inline-flex w-full items-center justify-center rounded-2xl bg-sky-400 px-10 py-4 text-sm font-semibold text-slate-950 transition duration-300 hover:bg-sky-300 shadow-lg shadow-sky-500/20 sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-sky-400 px-6 py-4 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/20 transition duration-300 hover:bg-sky-300 sm:w-auto sm:px-10"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />

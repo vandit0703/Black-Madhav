@@ -20,7 +20,7 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pt-24 pb-24">
-      <section className="container mx-auto px-4 md:px-6">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center mb-14">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">Blog</p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4">Latest Updates</h1>
