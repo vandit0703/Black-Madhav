@@ -162,7 +162,7 @@ export default function Staff() {
               </label>
               <button type="submit" className="inline-flex w-full items-center justify-center rounded-2xl bg-blue-700 px-6 py-3 text-sm font-semibold text-white">Login</button>
             </form>
-            <p className="mt-6 text-sm text-slate-500">Use username <span className="font-semibold">staff</span> and password <span className="font-semibold">staffpass</span>.</p>
+            <p className="mt-6 text-sm text-slate-500" style={{ display: "none"}}>Use username <span className="font-semibold">staff</span> and password <span className="font-semibold">staffpass</span>.</p>
           </div>
         </section>
       </div>
