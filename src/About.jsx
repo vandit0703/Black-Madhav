@@ -15,11 +15,31 @@ import {
 } from "lucide-react";
 
 const approachSteps = [
-  { title: "Understand", description: "We understand your business and goals" },
-  { title: "Strategize", description: "We create a clear strategy" },
-  { title: "Create", description: "We design and develop solutions" },
-  { title: "Optimize", description: "We go live with perfection" },
-  { title: "Grow", description: "We optimize and scale your business" },
+  {
+    icon: <Eye className="h-8 w-8" />,
+    title: "Understand",
+    description: "We understand your business and goals",
+  },
+  {
+    icon: <Target className="h-8 w-8" />,
+    title: "Strategize",
+    description: "We create a clear strategy",
+  },
+  {
+    icon: <Lightbulb className="h-8 w-8" />,
+    title: "Create",
+    description: "We design and develop solutions",
+  },
+  {
+    icon: <CheckCircle2 className="h-8 w-8" />,
+    title: "Optimize",
+    description: "We go live with perfection",
+  },
+  {
+    icon: <TrendingUp className="h-8 w-8" />,
+    title: "Grow",
+    description: "We optimize and scale your business",
+  },
 ];
 
 const differences = [
@@ -71,7 +91,7 @@ const experts = [
     bio: "Builds reliable, high-performance web applications from front-end design to back-end systems, making sure every solution is fast, scalable, and secure.",
   },
   {
-    name: "Vishruti Sanghani",
+    name: "Vishruti Sangani",
     role: "Digital Marketing Specialist",
     bio: "Develops tailored marketing campaigns and growth strategies that increase visibility, generate leads, and convert audiences across digital channels.",
   },
@@ -79,27 +99,27 @@ const experts = [
 
 const workSteps = [
   {
-    number: "1",
+    icon: <Eye className="h-8 w-8" />,
     title: "Discover",
     description: "We understand your business and goals",
   },
   {
-    number: "2",
+    icon: <Target className="h-8 w-8" />,
     title: "Plan",
     description: "We create a clear strategy",
   },
   {
-    number: "3",
+    icon: <Lightbulb className="h-8 w-8" />,
     title: "Build",
     description: "We design and develop solutions",
   },
   {
-    number: "4",
+    icon: <Rocket className="h-8 w-8" />,
     title: "Launch",
     description: "We go live with perfection",
   },
   {
-    number: "5",
+    icon: <TrendingUp className="h-8 w-8" />,
     title: "Grow",
     description: "We optimize and scale your business",
   },
@@ -242,7 +262,7 @@ export default function About() {
               >
                 <div className="text-center">
                   <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-white flex items-center justify-center text-3xl font-black shadow-md">
-                    {i + 1}
+                    {step.icon}
                   </div>
                   <h3 className="text-xl font-bold text-blue-950 mb-2">{step.title}</h3>
                   <p className="text-sm text-slate-600">{step.description}</p>
@@ -432,7 +452,7 @@ export default function About() {
               <motion.div
                 key={i}
                 variants={itemVariants}
-                className={`bg-gradient-to-br ${item.color} rounded-2xl p-5 text-white shadow-lg transition-all hover:shadow-xl sm:p-8`}
+                className={`bg-gradient-to-r from-blue-950 to-blue-900 rounded-2xl p-5 text-white shadow-lg transition-all hover:shadow-xl sm:p-8`}
               >
                 <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                 <p className="text-lg leading-relaxed opacity-95">{item.description}</p>
@@ -474,7 +494,7 @@ export default function About() {
                 className="relative"
               >
                 <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">
-                  {step.number}
+                  {step.icon}
                 </div>
                 <h3 className="text-xl font-bold text-blue-950 text-center mb-2">
                   {step.title}

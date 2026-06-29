@@ -219,7 +219,7 @@ const faqItems = [
 
 const stats = [
   { value: 100, suffix: "+", label: "Projects Completed Successfully" },
-  { value: 50, suffix: "+", label: "Happy Clients" },
+  { value: 70, suffix: "+", label: "Happy Clients" },
   { value: 20, suffix: "+", label: "Services Offered" },
   { value: 5, suffix: "+", label: "Years of Experience" },
   { value: 95, suffix: "%", label: "Client Satisfaction Rate" },
@@ -667,7 +667,7 @@ export default function Home() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
               Our Work Speaks Through Numbers
             </p>
-            <h2 className="text-3xl font-bold tracking-tight text-blue-950 md:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight text-blue-950 md:text-4xl">
               Our Work Speaks Through Numbers
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
@@ -828,12 +828,12 @@ export default function Home() {
               <div className="space-y-6 text-slate-700">
                 <div>
                   <h3 className="font-semibold text-blue-950">Address</h3>
-                  <p>G8 Uniconprime, Near Avadh Showroom, Jamnagar, Gujarat</p>
+                  <p>G8 Unicorn prime, Near Avadh Showroom, Jamnagar, Gujarat</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Phone</h3>
                   <p>+91 8128730715</p>
-                  <p>+91 7041090715</p>
+              
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Email</h3>

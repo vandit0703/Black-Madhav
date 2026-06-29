@@ -310,7 +310,7 @@ export default function Services() {
             Services Designed to Support Every Stage of Your Growth
           </h2>
           <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed text-gray-600">
-            Click on any service card to explore detailed information about what we offer, key features, and benefits. Works seamlessly on mobile, tablet, and desktop.
+            Click on any service card to explore detailed information about what we offer, key features, and benefits.
           </p>
         </div>
 

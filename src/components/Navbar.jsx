@@ -1,23 +1,28 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/Blackmadhavicon.svg";
+
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Blog", path: "/blog" },
-  { name: "Careers", path: "/careers" },
   { name: "Portfolio", path: "/portfolio" },
-  { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
+];
+
+const otherLinks = [
+  { name: "Careers", path: "/careers" },
+  { name: "Testimonials", path: "/testimonials" },
+  { name: "Blog", path: "/blog" },
 ];
 
 export function Navbar() {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isOthersActive = otherLinks.some((link) => location.pathname === link.path);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,6 +67,36 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <div className="group relative">
+            <button
+              type="button"
+              className={`inline-flex items-center gap-1 text-sm font-medium transition-colors ${
+                isOthersActive
+                  ? "text-black border-b-2 border-black pb-1"
+                  : "text-gray-600 hover:text-black"
+              }`}
+              data-testid="btn-desktop-others"
+            >
+              Others
+              <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+            </button>
+            <div className="invisible absolute right-0 top-full z-50 mt-3 w-48 translate-y-2 rounded-lg border border-gray-200 bg-white p-2 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              {otherLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`block rounded-md px-4 py-2.5 text-sm font-medium transition-colors ${
+                    location.pathname === link.path
+                      ? "bg-black text-white"
+                      : "text-gray-600 hover:bg-gray-100 hover:text-black"
+                  }`}
+                  data-testid={`link-desktop-${link.name.toLowerCase()}`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
         </nav>
 
         <div className="hidden md:flex items-center">
@@ -110,6 +145,26 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
+              <div className="rounded-md border border-gray-200 p-2">
+                <p className="px-3 py-2 text-xs font-semibold uppercase tracking-widest text-gray-400">
+                  Others
+                </p>
+                {otherLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`block rounded-md p-3 text-base font-medium transition-colors ${
+                      location.pathname === link.path
+                        ? "bg-black text-white"
+                        : "text-gray-600 hover:bg-gray-100 hover:text-black"
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                    data-testid={`link-mobile-${link.name.toLowerCase()}`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
               <div className="pt-3 pb-1 border-t border-gray-200">
                 <Link
                   to="/contact"

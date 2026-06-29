@@ -48,14 +48,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li>Email: blackmadhavdigitalsolutions@gmail.com</li>
               <li>Phone: +91 8128730715</li>
-              <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 7041090715</li>
-              <li>Address: Jamnagar, Gujarat</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-blue-950/60 pt-6 text-center text-sm text-gray-400">
-          © 2026 Black Madhav Digital Solution. All Rights Reserved.
+          © 2025 Black Madhav Digital Solution. All Rights Reserved.
         </div>
       </div>
     </footer>

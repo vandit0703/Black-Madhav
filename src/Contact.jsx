@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Email</p>
-                  <p className="text-sm text-slate-600">hello@blackmadhav.com</p>
+                  <p className="text-sm text-slate-600">blackmadhavdigitalsolution@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Phone</p>
-                  <p className="text-sm text-slate-600">+91 12345 67890</p>
+                  <p className="text-sm text-slate-600">+91 8128730715</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -88,7 +88,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900">Location</p>
-                  <p className="text-sm text-slate-600">Ahmedabad, Gujarat, India</p>
+                  <p className="text-sm text-slate-600">G8 Unicorn prime, Near Avadh Showroom, Jamnagar, Gujarat</p>
                 </div>
               </div>
             </div>
