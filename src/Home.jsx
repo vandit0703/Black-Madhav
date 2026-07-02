@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HeroSection } from "./HeroSection";
+import OfficeLocations from "./components/OfficeLocations";
 import {
   ArrowRight,
   BarChart,
@@ -379,9 +380,9 @@ export default function Home() {
   }, []);
 
   return (
-    
+
     <div id="top" className="flex min-h-screen flex-col overflow-x-hidden pt-24 bg-slate-50 text-slate-800 " data-testid="page-home">
-      
+
       <HeroSection />
       {/* About Section */}
       <section id="about" className="border-y border-blue-100 bg-gradient-to-b from-white to-blue-50/30 py-20">
@@ -622,6 +623,8 @@ export default function Home() {
         </div>
       </section>
 
+      <OfficeLocations />
+
       {/* FAQ Section */}
       <section id="faq" className="bg-white py-24 md:py-32">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -827,13 +830,22 @@ export default function Home() {
               </h2>
               <div className="space-y-6 text-slate-700">
                 <div>
-                  <h3 className="font-semibold text-blue-950">Address</h3>
-                  <p>G8 Unicorn prime, Near Avadh Showroom, Jamnagar, Gujarat</p>
+                  <h3 className="font-semibold text-blue-950">Our Branches</h3>
+                  <div className="mt-3 space-y-4">
+                    <div>
+                      <p className="font-medium text-blue-900">Jamnagar Branch:</p>
+                      <p>G - 8, Unicorn Prime, Ranjit Sagar Rd, nr. Avadh Honda Showroom, Green City, Jamnagar, Gujarat 361006</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-blue-900">Junagadh Branch:</p>
+                      <p>SHOP NO 113, CRYSTAL A, madhuram road, Applewood township, Moti Palace Twp, Junagadh, Gujarat 362015</p>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Phone</h3>
                   <p>+91 8128730715</p>
-              
+
                 </div>
                 <div>
                   <h3 className="font-semibold text-blue-950">Email</h3>
@@ -944,6 +956,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
       <div style={{ display: "none" }}>
         Developed by Vandit Katbamna
       </div>
